@@ -2,15 +2,16 @@
 ===
 
 > create by **jsliang** on **2018年8月30日15:47:00**  
-> Recently revised in **2018-10-28 10:54:44**
+> Recently revised in **2019-05-20 17:41:10**
 
 ## 第十章 迭代器模式
+
 * 顺序访问一个集合
 * 使用者无需知道集合的内部结构（封装）
 
 ### 10.1 代码演示
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,7 +72,8 @@
 ![图](../../public-repertory/img/js-design-pattern-chapter10-2.png)
 
 > jQuery each
-```
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,7 +124,8 @@
 ```
 
 > ES6 Iterator
-```
+
+```js
 // 旧写法：
 // function each(data) {
 //     // 生成遍历器

@@ -2,9 +2,10 @@
 ===
 
 > create by **jsliang** on **2018年9月3日10:30:19**  
-> Recently revised in **2018-10-28 10:54:44**
+> Recently revised in **2019-05-20 17:42:49**
 
 ## 第十章 状态模式
+
 * 一个对象有状态变化
 * 每次状态变化都会触发一个逻辑
 * 不能总是用 if...else... 来控制
@@ -14,12 +15,13 @@
 <br>
 
 ### 11.1 UML图
+
 ![图](../../public-repertory/img/js-design-pattern-chapter11-1.png)
 
 <br>
 ### 11.2 代码演示
 
-```
+```js
 // 状态：红灯、绿灯、蓝灯
 class State {
     constructor(color) {
@@ -89,7 +91,8 @@ console.log(context.getState()); // 打印状态
 2. 代码：es6 webpack 环境下
 
 > index.html
-```
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,7 +112,8 @@ console.log(context.getState()); // 打印状态
 ```
 
 > index.js
-```
+
+```js
 import StateMachine from 'javascript-state-machine'
 
 // 初始化状态机模型
@@ -167,7 +171,7 @@ updateText();
 > * 写代码
 > * 测试验证
 
-```
+```js
 function loadImg(src) {
     const promise = new Promise(function(resolve, reject) {
         var img = document.createElement("img");
@@ -212,7 +216,7 @@ result.then(function(img) {
 2. pending -> fullfilled 或者 pending -> rejected
 3. 不能逆向变化
 
-```
+```js
 import StateMachine from 'javascript-state-machine';
 
 // 状态机模型
